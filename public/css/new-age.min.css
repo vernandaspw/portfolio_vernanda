@@ -1,0 +1,21 @@
+
+
+
+#mainNav{border-color:rgba(255, 255, 255);background-color:#2a5cff;transition:all .35s;font-family:'poppins';letter-spacing:1px}
+#mainNav .navbar-brand{color:#ffffff;font-family:'poppins';letter-spacing:1px}
+#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#ffffff}
+#mainNav .navbar-toggler{font-size:15px;padding:8px 10px;color:rgb(255, 255, 255)} 
+#mainNav .navbar-nav>li>a{font-size:14px;font-family:'poppins';letter-spacing:2px;}
+#mainNav .navbar-nav>li>a.active{color:#ffd900!important;background-color:transparent}
+#mainNav .navbar-nav>li>a.active:hover{background-color:transparent}#mainNav .navbar-nav>li>a,#mainNav .navbar-nav>li>
+a:focus{color:rgb(232, 232, 232)}#mainNav .navbar-nav>li>a:focus:hover,#mainNav .navbar-nav>li>a:hover{color:#000000}
+@media (min-width:992px){#mainNav{border-color:transparent;background-color:transparent}
+#mainNav .navbar-brand{color:fade(white,70%)}
+#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:rgb(0, 0, 0)}
+#mainNav .navbar-nav>li>a,#mainNav .navbar-nav>li>a:focus{color:rgba(255, 255, 255)}
+#mainNav .navbar-nav>li>a:focus:hover,#mainNav .navbar-nav>li>a:hover{color:rgb(255, 255, 255)}
+#mainNav.navbar-shrink{border-color:rgba(255, 255, 255, 0.1);background-color:#fff}
+#mainNav.navbar-shrink .navbar-brand{color:rgb(0, 0, 0)}
+#mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover{color:#ffffff}
+#mainNav.navbar-shrink .navbar-nav>li>a,#mainNav.navbar-shrink .navbar-nav>li>a:focus{color:rgb(0, 0, 0)}
+#mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,#mainNav.navbar-shrink .navbar-nav>li>a:hover{color:#000000}}
