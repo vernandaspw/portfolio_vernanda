@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                             <div class="col-2">
-                                <a href=" #" class="btn  btn-outline-light px-4"><span
+                                <a href="/link" class="btn  btn-outline-light px-4"><span
                                         class="text-center">Tautan</span></a>
                             </div>
                             <div class="col-8">
@@ -51,7 +51,8 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="fotoprofil img-fluid" src=" {{asset('images/profil_2.png')}} " alt="">
+                    <img data-aos="zoom-in-up" class="fotoprofil img-fluid" src=" {{asset('images/profil_2.png')}} "
+                        alt="">
                 </div>
             </div>
         </header>
@@ -64,25 +65,28 @@
             <section>
                 <div class="container">
                     <div class="section-heading text-center">
-                        <h1>Keterampilan</h1>
-                        <p class="text-muted">Keterampilan dan minat saya</p>
+                        <h1 data-aos="fade-down">Keterampilan</h1>
+                        <p data-aos="fade-down" class="text-muted">Keterampilan dan minat saya</p>
                     </div>
                     <div class="container d-flex justify-content-around">
                         <div class="row mt-5">
                             <div class="col-xs-4 my-3 mx-5">
-                                <div class="card text-center border-0">
+                                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                                    class="card text-center border-0">
                                     <img src="{{asset('images/design.png')}}" alt=""> <br>
                                     Design
                                 </div>
                             </div>
                             <div class="col-xs-4 my-3 mx-5">
-                                <div class="card text-center border-0">
+                                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                                    class="card text-center border-0">
                                     <img src="{{asset('images/webdev.png')}}" alt=""> <br>
                                     Web Development
                                 </div>
                             </div>
                             <div class="col-xs-4 my-3 mx-5">
-                                <div class="card text-center border-0">
+                                <div data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                                    class="card text-center border-0">
                                     <img src="{{asset('images/appdev.png')}}" alt=""> <br>
                                     Flutter Development
                                 </div>
@@ -99,43 +103,51 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/figma.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        src="{{asset('images/figma.png')}}" alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/htm.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" src="{{asset('images/htm.png')}}"
+                        alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/css.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" src="{{asset('images/css.png')}}"
+                        alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/js.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" src="{{asset('images/js.png')}}"
+                        alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/sass.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" src="{{asset('images/sass.png')}}"
+                        alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/bootstrap.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        src="{{asset('images/bootstrap.png')}}" alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/laravel.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        src="{{asset('images/laravel.png')}}" alt="">
                 </div>
                 <div class="a mx-4 my-5">
-                    <img src="{{asset('images/flutter.png')}}" alt="">
+                    <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                        src="{{asset('images/flutter.png')}}" alt="">
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="portofolio" style="margin-bottom: 50px; padding-top: 50px;">
+<section id="portofolio" style="margin-bottom: 80px; padding-top: 50px;">
     <div class="container-fluid">
         <div class="container">
             <div class="section-heading text-center">
-                <h1>Portofolio</h1>
-                <p class="text-muted">Kumpulan karya saya</p>
+                <h1 data-aos="fade-down">Portofolio</h1>
+                <p data-aos="fade-down" class="text-muted">Kumpulan karya saya</p>
             </div>
-            <div class="d-flex justify-content-center mt-4">
-                <ul class="nav nav-pills mb-3">
+            <div class="d-flex justify-content-center mt-4 mb-2">
+                <ul class="nav nav-pills mb-3 d-flex flex-wrap justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/#portofolio">Semua</a>
                     </li>
@@ -155,8 +167,11 @@
             </div>
             <div class="d-flex align-content-start flex-wrap">
                 <div class="text-center">
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
 
-                    @yield('portofolio')
+                        @yield('portofolio')
+                    </div>
+
 
                 </div>
 
@@ -172,14 +187,16 @@
     <div class="container-fluid">
         <div class="container">
             <div class="text-center">
-                <h1 style="color: white; padding-top: 100px;">Apakah kamu ingin <br> berbicara dengan saya?</h1>
-                <div class="hub mt-5">
+                <h1 data-aos="fade-right" style="color: white; margin-bottom: 50px; padding-top: 100px;">Apakah kamu
+                    ingin <br> berbicara
+                    dengan saya?</h1>
+                <div data-aos="fade-left" class="hub mt-5">
                     <a class="btn btn-light px-4 mr-1" href="#"><img src="{{asset('icons/email.svg')}}" alt="">
                         Email</a>
                     <a class="btn btn-light px-3" href="#"><img src="{{asset('icons/wa.svg')}}" alt="">WhatsApp</i></a>
                 </div>
                 <br>
-                <div class="sosmed" style="padding-bottom: 100px; margin-top: 80px;">
+                <div data-aos="fade-right" class="sosmed" style="padding-bottom: 100px; margin-top: 80px;">
                     <a class="mx-2" href="http://"><img src="{{asset('icons/link.svg')}}" alt=""></a>
                     <a class="mx-2" href="http://"><img src="{{asset('icons/ig.svg')}}" alt=""></a>
                     <a class="mx-2" href="http://"><img src="{{asset('icons/facebook.svg')}}" alt=""></a>

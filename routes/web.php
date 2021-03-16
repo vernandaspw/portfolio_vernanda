@@ -19,9 +19,14 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::resource('/', LandingController::class);
+Route::get('/', [LandingController::class, 'index']);
+
+// Route::get('/', function () {
+//     return view('pages.landing.index');
+// });
 
 Route::view('/', 'pages.landing.semua');
 Route::view('/design', 'pages.landing.design');
 Route::view('/web', 'pages.landing.web');
 Route::view('/app', 'pages.landing.app');
+Route::view('/link', 'pages.linker.index');
