@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,5 @@ Route::view('/design', 'pages.landing.design');
 Route::view('/web', 'pages.landing.web');
 Route::view('/app', 'pages.landing.app');
 Route::view('/link', 'pages.linker.index');
+
+Route::get('/admin', [AdminController::class, 'index']);
